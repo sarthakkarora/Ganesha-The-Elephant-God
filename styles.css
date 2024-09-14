@@ -1,0 +1,597 @@
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+    background-image: url(https://lalbaugcharaja.com/wp-content/uploads/2024/09/lalbugcharaja-homepage2024.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #003a6e;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    margin: 80px auto 20px;
+    padding: 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.95); 
+
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ol li{
+margin:30px 25px;
+}
+
+ol li p{
+    margin:5px 0px;
+    }
+
+nav {
+    display: flex;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 0px 15px;
+    width: 100%;
+    background: linear-gradient(to right, #4a90e2, #0074cc, #003a6e);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.logo-image {
+    position: relative;
+    top: 5px;
+    width: 100px;
+    height: 80px;
+    margin-left: -55px;
+}
+
+#logo-link {
+    font-family: 'Style Script', cursive;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 15px;
+    padding: 5px 25px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 20px;
+    padding: 5px 0px;
+    position: relative;
+    transition: color 0.5s;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 25%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #003a6e;
+}
+
+nav a:hover::before {
+    width: 75%;
+    background: #003a6e;
+}
+.sub-menu{
+    border-radius: 3px;
+    z-index: 10;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    outline: 2px solid #fff; 
+    margin: 8px 60px 8px 30px;
+    cursor: pointer;
+    filter: brightness(1.2); 
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.4); 
+    border-radius: 50%; 
+}
+
+.green-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #00a44f;
+    position: absolute;
+    bottom: 5px;
+    right:60px;
+    border-radius: 50%; 
+    animation: blink 1.2s infinite alternate; 
+    border: 1px solid #fff; 
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0.4; 
+    }
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    right:5%;
+    width: 340px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: #fff;
+    padding:20px;
+    margin:10px;
+    z-index: 999;
+
+}
+
+hr{
+    border: 0;
+    height:2px;
+    width: 100%;
+    background-color: #003a6e;
+    margin: 15px 0 10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info img{
+    cursor: pointer;
+}
+
+.crafted-by{
+    margin: 0;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info h3{
+    font-weight: 600;
+    color: #003a6e;
+}
+
+.user-info img {
+    width: 60px;
+    border-radius: 50%;
+    outline: 2px solid #003a6e; 
+    margin-right:15px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.2);
+}
+
+.social-links {
+    display: inline-block;
+}
+
+.social-links a {
+   
+    margin-right: 40px;
+    margin-left: 20px;
+    text-decoration: none; 
+    color: black;
+    font-size: 16px; 
+}
+
+.social-links a:last-child {
+    margin-right: 0; 
+}
+
+
+.heading{
+    font-family: 'Style Script', cursive;
+    text-align: center;
+    margin: 10px;
+    color: #003a6e;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    color: #003a6e;
+    font-family: monospace;
+    margin: 20px 25px;
+}
+
+.description {
+    flex: 1; 
+    margin-right: 20px; 
+    text-align: left; 
+}
+
+.slider {
+    width: 250px; 
+    height: 250px; 
+}
+
+.slider .slide {
+    width: 250px;
+    height: 280px;
+    border-radius: 40px;
+    display: none;
+    object-fit: cover;
+}
+
+.slide.active {
+    display: block;
+}
+
+.nav{
+    text-align: center;
+    margin-top: 15px;
+    z-index: 10;
+    position: absolute;
+    padding: 5px;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    top:107px;
+    right:4.6%;
+}
+
+.nav button{
+    width: 35px;
+    height: 35px;
+    outline: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 800;
+    font-size: 20px;
+    border: 0;
+    margin:100px 0px;
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 15px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease-in;
+}
+
+.nav button:hover{
+    color: #616161;
+}
+
+
+footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.life-events{
+ font-family: monospace;
+ color: #003a6e;
+}
+
+.section-heading{
+ display: flex;
+ margin:50px 20px 15px 20px;   
+ justify-content: center;
+ align-items: center;
+}
+
+.container-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+.container{
+    width: 260px;
+    height: 370px;
+    display: flex;
+    position: relative;
+    margin: 0px 20px 35px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    flex-direction: column;
+    transition: box-shadow 0.3s; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+cursor: pointer;
+transition: scale 0.3s ease-in-out;
+}
+
+.container .image{
+    overflow: hidden;
+    width: 260px;
+    min-height: 100px;
+}
+.container .image img{
+    width: 260px;
+    height:225px;
+    object-fit: fill;
+    transition: scale 0.3s ease-in-out;
+}
+
+.container:hover .image img{
+    scale: 1.07;
+    }
+
+.container:hover {
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+scale: 1.1;
+}
+
+.container-content{
+padding: 5px;
+margin: 5px;
+}
+
+.read-more{
+    padding: 3px 25px 10px 140px;
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+    background: #fff;
+}
+
+.read-more a{
+    text-decoration: none;
+    color:#003a6e;
+    font-weight: 700;
+}
+
+#lessons{
+    width: 850px;
+    margin: 25px;
+}
+
+.gallery {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row img {
+    width: 195px;
+    height: 195px;
+    object-fit: fill;
+    cursor: pointer;
+    transition: scale 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+
+.gallery-image{
+    position: relative;
+    width: 195px;
+    height: 195px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+margin: 3px;
+cursor: pointer;
+color:#fff;
+transition: scale 0.3s ease-in-out;
+}
+
+.gallery-image:hover{
+    scale: 1.05;
+}
+.gallery-image .content{
+    top:0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    margin: 0;
+    width: 185px;
+    height: 185px;
+    padding: 5px;
+    text-align: center;
+}
+
+.gallery-image .content:hover{
+    opacity: 1;
+}
+
+.gallery-image .content h3{
+  margin:10px 0px 0px 0px;
+  padding: 5px;
+  font: 20px;
+}
+
+.gallery-image .content p{
+    padding:5px;
+    font-size: 15px;
+  }
+
+
+.festivals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.festivals .container{
+    width: 260px;
+    height: 270px;
+    display: flex;
+    position:relative;
+    margin: 0px 20px 35px 20px;
+    border-radius: 5px;
+    background-color: #003a6e;
+    flex-direction: column;
+    transition: box-shadow 0.3s; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+cursor: pointer;
+transition: scale 0.3s ease-in-out;
+}
+
+.festivals .container .image{
+    overflow: hidden;
+    width: 260px;
+    max-height: 225px;
+}
+
+
+.festivals .container-content{
+position: relative;
+text-align: center;
+background: linear-gradient(to right, #0074cc, #003a6e);
+color: #fff;
+padding: 5px 10px 30px 10px;
+margin: 0;
+transition: bottom 0.5s ease-in-out;
+}
+
+.festivals .container .container-content h3{
+    font-size: 19px;
+    padding-bottom: 3px;
+    transition: font-size 0.1s ;
+}
+
+.festivals .container:hover .container-content h3{
+font-size: 15px;
+padding: 0px;
+}
+
+
+/* */
+
+
+.names{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.names .container{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    position:relative;
+    margin: 0px 5px 35px 5px;
+    border-radius: 5px;
+    background: linear-gradient(to left, #0074cc, #003a6e);
+    flex-direction: column;
+    transition: box-shadow 0.3s; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+cursor: pointer;
+transition: scale 0.3s ease-in-out;
+}
+
+.names .container .image{
+    overflow: hidden;
+    width: 200px;
+    max-height: 150px;
+}
+.names .container .image img{
+    width: 200px;
+    height:100px;
+    object-fit: fill;
+    transition: scale 0.3s ease-in-out;
+}
+
+.names .container:hover .image img{
+    scale: 1.05;
+}
+
+.names .container:hover {
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+scale: 1.1;
+}
+
+.names .container-content{
+position: relative;
+text-align: center;
+bottom:13%;
+background: linear-gradient(to left, #0074cc, #003a6e);
+color: #fff;
+padding: 5px 10px 10px 10px;
+margin: 0;
+transition: bottom 0.5s ease-in-out;
+}
+
+.names .container:hover .container-content{
+    bottom:90%;
+}
+.names .container .container-content h3{
+    font-size: 19px;
+    padding-bottom: 3px;
+    transition: font-size 0.1s ;
+}
+
+.names .container:hover .container-content h3{
+font-size: 15px;
+padding: 0px;
+}
+
+.names .container:hover .container-content p{
+padding-bottom:15px ;    
+}
